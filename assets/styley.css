@@ -1,8 +1,9 @@
 :root {
-    --card-color: whitesmoke;
     --board-color: rgb(58, 121, 58);
-    --main-bg-color: #000;
+    --card-color: whitesmoke;
+    --card-border-color: cornflowerblue;
     --display-color: yellowgreen;
+    --main-bg-color: #000;
 }
 
 * {
@@ -10,19 +11,19 @@
 }
 
 body {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
 }
 
 .pg__main {
+    align-items: center;
     background-color: var(--main-bg-color);
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
+    justify-content: center;
     /* width: 100%; */
 }
 
@@ -30,8 +31,8 @@ body {
     background-color: var(--board-color);
     /* flex: 70%; */
     height: 70%;
-    width: 55%;
     padding: 1rem;
+    width: 55%;
     /* display: flex; */
     /* justify-content: center; */
 }
@@ -48,14 +49,14 @@ body {
 
 .pg__cards {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0 1.5rem;
 }
 
 .pg__card {
     background-color: var(--card-color);
-    border: 1px solid cornflowerblue;
+    border: 1px solid var(--card-border-color);
     border-radius: .2rem;
     height: 9.5rem;
     margin: .8rem;
