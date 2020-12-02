@@ -55,8 +55,10 @@ body {
 
 .pg__card {
     background-color: var(--card-color);
-    margin: .8rem;
+    border: 1px solid cornflowerblue;
+    border-radius: .2rem;
     height: 9.5rem;
+    margin: .8rem;
     width: 15%;
 }
 
