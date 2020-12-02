@@ -1,5 +1,8 @@
 :root {
     --card-color: whitesmoke;
+    --board-color: rgb(58, 121, 58);
+    --main-bg-color: #000;
+    --display-color: yellowgreen;
 }
 
 * {
@@ -8,4 +11,42 @@
 
 body {
     margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+
+.pg__main {
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pg__board {
+    background-color: var(--board-color);
+    height: 70%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pg__display {
+    color: var(--display-color);
+}
+
+.pg__cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pg__card {
+    background-color: var(--card-color);
+    border: .25rem;
+    height: 100px;
+    width: 100px;
 }
